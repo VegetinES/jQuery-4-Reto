@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM con jQuery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="Nueva tarea">
+            <button id="addTask">Añadir Tarea</button>
+        </div>
+
+        <div class="controls">
+            <button id="highlightTasks">Resaltar Tareas</button>
+            <button id="toggleComplete">Marcar/Desmarcar Completadas</button>
+        </div>
+
+        <ul id="taskList">
+            <li>Aprender jQuery<button class="delete-btn">Eliminar</button></li>
+            <li>Practicar manipulación del DOM<button class="delete-btn">Eliminar</button></li>
+            <li>Completar el reto<button class="delete-btn">Eliminar</button></li>
+        </ul>
+
+        <div id="summary">
+            <p>Total de tareas: <span id="taskCount">3</span></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
